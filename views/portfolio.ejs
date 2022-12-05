@@ -1,0 +1,48 @@
+<%- include("partials/_header") %>        
+        
+<%- include("partials/_menu") %>
+
+        
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+
+                    <% for (photo of photos) { %>
+
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <a class="noUnderline" href="/portfolio/<%= photo._id%>">
+                        <div class="portfolio-item mx-auto">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="<%= photo.img%>" alt="#" />
+                            <h3 style="padding-top:5px; padding-bottom:5px"> 
+                            <%= photo.name %></h3>
+                            <p style="padding-top:10px;"><%= photo.description.substring(0, 140) + "..." %></p>
+                        </div>
+                        </a>
+                    </div>
+
+
+
+
+                    <%  } %>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <%- include("partials/_footer") %>       

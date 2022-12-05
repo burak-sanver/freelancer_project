@@ -1,0 +1,54 @@
+<%- include("partials/_header") %>
+    <body id="page-top">
+        <!-- Navigation    menu ejs kısmı-->
+        <%- include("partials/_menu") %>
+        <!-- Masthead     //////   index sayfasındaki çıkacak yer tüm header-->   
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Burak Şanver</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Backend Çalışmaları</p>
+            </div>
+        </header>
+
+             
+       <!-- About Section-->
+       <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">about</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto"><p class="lead">Herkese merhaba. Bu çalışmamla birlikte daha önceki yaptığım projeleri saklayabileceğim bir portfolio sitesi yapmış oldum. Çalışmada MVC modelini etkin kullanmaya çalıştım. Admin paneli yapmadım. Thunder client ile ekleme yapıyorum. </p></div>
+                <div class="col-lg-4 me-auto"><p class="lead">Header bölümünü düzenledim. Portfolio ve tekil proje sayfalarını oluşturdum. Projeleri portfolioda görüntüleyip özel olarak tekil sayfasına ulaşabilirsiniz. Contact kısmını statik olarak bıraktım <a href="https://startbootstrap.com/theme/freelancer" target="_blank" style="color: white ;">Hazır template kullandım</a></p></div>
+            </div>
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-light" href="https://github.com/burak-sanver/">
+                    Github
+                </a>
+            </div>
+        </div>
+    </section>
+
+        
+
+
+
+        <!-- Footer-->
+        <%- include("partials/_footer") %>
